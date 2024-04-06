@@ -1,0 +1,24 @@
+.App {
+	margin: auto;
+	height: 100vh;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	background-color: cadetblue;
+}
+
+.navBar {
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+}
+
+a {
+	margin-right: 10px;
+}
+
+button {
+	width: 200px;
+	height: 30px;
+	border-radius: 15px;
+}

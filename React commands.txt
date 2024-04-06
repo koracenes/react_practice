@@ -1,0 +1,4 @@
+ctr c -> exit
+
+cd my-app
+npm start -> pokretanje projekta
