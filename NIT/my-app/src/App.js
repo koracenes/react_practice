@@ -1,27 +1,34 @@
 import "./App.css";
+import { Card } from "./components/Card.js";
+import { Button } from "./components/button.js";
+import Dog from "./components/images/dog.jpg";
+import Cat from "./components/images/cat.jpg";
+import Panda from "./components/images/panda.jpg";
+import { Pozdrav } from "./components/pozdrav.js";
 
 //jsx: sve sto se nalazi u ovoj funkciji
 function App() {
-	const click = () => {
-		console.log("kliknuo si");
-	};
-
-	const txt = "neki teks";
-
-	let kvadrat = 4;
+	let name = "Enes";
+	let lastName = "Korac";
+	let age = "30";
+	let city = "Novi Pazar";
 
 	return (
-		<div className="App">
-			<h1 id="myH1">{txt}</h1>
-			<div className="navBar">
-				<a href="1">home </a>
-				<a href="2">about</a>
-				<a href="3">products</a>
-				<a href="4">contact</a>
+		<>
+			<Pozdrav ime={name} prezime={lastName} godine={age} grad={city} />
+			<Button text="LOG IN" slova="white" pozadina="blue" />
+			<Button text="REGISTER" slova="red" pozadina="white" />
+
+			<div className="kartice">
+				<Card
+					img={Panda}
+					ime="Enes Korac"
+					text="Aikdio majstor visokih razmera"
+				/>
+				<Card img={Cat} ime="Dado " text="imam el Sandzaky" />
+				<Card img={Dog} ime="Dzejlan Nukovic" text="Busines busines" />
 			</div>
-			<button onClick={click}>PRESS BUTTON</button>
-			<p>{kvadrat}</p>
-		</div>
+		</>
 	);
 }
 

@@ -18,7 +18,27 @@ a {
 }
 
 button {
+	display: block;
 	width: 200px;
 	height: 30px;
 	border-radius: 15px;
+}
+.kartice {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.cardBox {
+	margin: 10px;
+	padding: 10px 20px;
+	border: 1px solid black;
+	border-radius: 10px;
+	box-shadow: 5px 5px #6a6a6a;
+	height: 400px;
+	width: 200px;
+}
+
+.img {
+	height: 200px;
+	width: 200px;
 }
