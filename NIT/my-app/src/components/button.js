@@ -1,11 +1,11 @@
 import React from "react";
 
-export function Button(props) {
+export function Button({bgColor, txtColor, text}) {
 	return (
 		<>
-			<button style={{ color: props.slova, backgroundColor: props.pozadina }}>
-				{props.text}
-			</button>
+			<Button style={{ backgroundColor: bgColor, color: txtColor }}>
+				{text}
+			</Button>
 		</>
 	);
 }

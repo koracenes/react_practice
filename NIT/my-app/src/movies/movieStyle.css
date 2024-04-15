@@ -1,0 +1,7 @@
+.moviebox {
+	height: 300px;
+	width: 500px;
+	background-color: lightgray;
+	padding: 10px 15px;
+	gap: 15px;
+}

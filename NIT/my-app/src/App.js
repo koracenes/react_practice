@@ -5,6 +5,7 @@ import Dog from "./components/images/dog.jpg";
 import Cat from "./components/images/cat.jpg";
 import Panda from "./components/images/panda.jpg";
 import { Pozdrav } from "./components/pozdrav.js";
+import { MovieList } from "./movies/MoviesList.js";
 
 //jsx: sve sto se nalazi u ovoj funkciji
 function App() {
@@ -28,6 +29,8 @@ function App() {
 				<Card img={Cat} ime="Dado " text="imam el Sandzaky" />
 				<Card img={Dog} ime="Dzejlan Nukovic" text="Busines busines" />
 			</div>
+			<Button bgColor={"blue"} txtColor={"white"} text={"klikci"} />
+			<MovieList />
 		</>
 	);
 }
